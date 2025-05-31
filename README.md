@@ -1,115 +1,46 @@
-# Turborepo starter
+# NetSentinel 🛡️  
+**A Decentralized Watchdog for Web Reliability**
 
-This Turborepo starter is maintained by the Turborepo core team.
+NetSentinel is a decentralized uptime monitoring platform designed to track the health, availability, and performance of websites — powered by a trustless validator network and blockchain-based incentives.
 
-## Using this example
+Think of it as a decentralized alternative to traditional uptime monitors like BetterStack, but with **greater transparency, resilience, and trust**.
 
-Run the following command:
+---
 
-```sh
-npx create-turbo@latest
-```
+## 🚀 Features
 
-## What's inside?
+- 🌐 **Website Monitoring** — Track the uptime, status codes, and response times of any public URL.
+- 🛠️ **Decentralized Validators** — Validators from across the network verify uptime, ensuring accuracy and eliminating central failure points.
+- 💸 **Blockchain-Driven Payouts** — Built on **Solana**, validators earn rewards for accurate monitoring.
+- 📊 **Dashboard** *(Coming Soon)* — Visualize your monitors, view logs, and manage alerts.
+- 🔔 **Alert System** *(Planned)* — Configurable alerts via email, SMS, or push (on downtime detection).
 
-This Turborepo includes the following packages/apps:
+---
 
-### Apps and Packages
+## 🧠 Why Decentralized Monitoring?
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+Traditional uptime monitoring is centralized, meaning a single provider controls the data source. With NetSentinel:
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+- ✅ Monitoring is **verifiable** and **trustless**
+- 🧩 Validators are **incentivized** to stay honest
+- 💥 No single point of failure
+- 🔍 Users get a **tamper-proof uptime history**
 
-### Utilities
+---
 
-This Turborepo has some additional tools already setup for you:
+## 🔧 Tech Stack
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- **Backend:** Node.js / Express  
+- **Blockchain Layer:** Solana (for validator rewards and task verification)  
+- **Monitoring Logic:** Custom uptime pings, HTTP status checks  
+- **Validator Protocol:** Decentralized oracle-like structure *(inspired by Chainlink)*
 
-### Build
+---
 
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/docs/reference/command-line-reference)
-
-
-
-# db
-
-To install dependencies:
+## 📦 Installation (For Dev/Test)
 
 ```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.8. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
-
-
-FOR FE :- 
-in root dir,
-do:
-cd apps/frontend
--> bun dev
-
-FOR BE:-
-in root dir,
-do:
-cd apps/api
--> bun index.ts
+git clone https://github.com/your-username/netsentinel.git
+cd netsentinel
+npm install
+npm run dev
