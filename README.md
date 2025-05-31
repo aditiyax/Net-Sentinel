@@ -42,5 +42,5 @@ Traditional uptime monitoring is centralized, meaning a single provider controls
 ```bash
 git clone https://github.com/your-username/netsentinel.git
 cd netsentinel
-npm install
-npm run dev
+bun install
+bun dev
