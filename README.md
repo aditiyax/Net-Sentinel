@@ -82,3 +82,34 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/docs/reference/command-line-reference)
+
+
+
+# db
+
+To install dependencies:
+
+```bash
+bun install
+```
+
+To run:
+
+```bash
+bun run index.ts
+```
+
+This project was created using `bun init` in bun v1.2.8. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+
+
+FOR FE :- 
+in root dir,
+do:
+cd apps/frontend
+-> bun dev
+
+FOR BE:-
+in root dir,
+do:
+cd apps/api
+-> bun index.ts
