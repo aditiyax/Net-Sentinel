@@ -1,0 +1,7 @@
+# Root-level .dockerignore
+node_modules
+**/node_modules
+**/bun.lockb
+**/npm-debug.log
+**/.next
+**/dist

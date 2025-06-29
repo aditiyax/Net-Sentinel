@@ -1,0 +1,68 @@
+#1
+Can add logic to spread load of the validators; as of now ,each validators is sent an request, whenever
+ a new websites is added, this should not happen, as for n-websites, and m-validators, this operation will get
+ pretty expenseive, and also there's no need of so many validaotrs, 
+ SOLUTION- LOgic that limits max validators assigned to '10', for each webiste,
+
+
+#2
+ Adding RBAC, - 
+ ROLES___________
+ USER, the one who wants thier site to be validated,
+ VALIDATOR, the one who validates the websites,
+ ADMIN, the one who gets all info, in the dashboard. like total users, validators, website, success rates, etc etc.
+
+#3 
+A Page, whole different UI for the Validators, to join [Wanna Join Us ?] 
+where, they can signup, login, addDetail, updateDetails, getDetails[walletBalance, publicKey, timestamps],
+transactions(of withdrawals), add wallets, wesbites-monitored(history + present), 
+** monitor new websites, we can add a page, of the currently "open-to-monitor websites" ,
+where in the validators could come and select as in which websites they wanna monitor, listings may have,
+
+SCHEMAs --+--
+
+openings = {
+    client ID/name(populate),
+    website-url,
+    price(in Lamports/SOL)
+    timePeriod(if any)
+}
+
+ratings = {
+    websiteId,
+    validatorId,
+    userId,
+    rating
+}
+
+
+USER- 
+CRUD- signup, login, forgot password, getDetails(my-profile), updateDetails, deleteUser, 
+WEBSITES- createOpening , updateOpening, deleteOpening, getAllOpenings {history} (id-in query for a single one),
+getDetails- (
+    no.of validators, -> view all ->give ratings
+    successRate,
+    currentStatus,
+)
+
+
+VALIDATOR-
+CRUD- signup, login, forgot password, getDetails(my-profile), updateDetails, deleteProfile,
+WEBSITES- currentJobs, showActiveOpenings,applyToOpening, showAppliedOpennings(view thier statuses), dropAnOpening 
+WITHDRAWALs - withdrawSOL, txnHistory, viewBalances
+
+
+ADMIN-
+CRUD-  login, forgot password, getDetails(my-profile), updateDetails,
+DASHBOARD - {
+    totalUsers, -> view any user's deatils -> thier websites -> website details !!
+    totalValidators, -> view any validator's deatils- txn history
+    avgSuccessRate, 
+    walletBalance, 
+    adminWalletTxnHistory,
+}
+Manage Users - blockUser, queries, getAnyUsersDetails -> thier websites -> analytics, txnHistory
+Manage Validators - blockValidator, queries getAnyVDTsDetails -> thier validatedWebsites -> analytics , txnHistory
+
+
+
